@@ -59,11 +59,16 @@ table {
 
 /*import font*/
 body {
+  color: #fff;
   background-color: #000;
 }
 
 h1, h2, h3, h4, h5, p, a {
   font-family: "Noto Sans TC", sans-serif;
+}
+
+p {
+  line-height: 1.5;
 }
 
 h1 {
@@ -73,17 +78,30 @@ h1 {
   line-height: 1.2;
   color: #fff;
 }
+@media (max-width: 1199px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
 
 h2 {
   font-size: 5rem;
+  font-weight: 900;
 }
 
 h3 {
   font-size: 3rem;
+  font-weight: 900;
 }
 
 h4 {
   font-size: 2rem;
+  font-weight: 900;
 }
 
 h5 {
@@ -144,6 +162,14 @@ section {
   border-radius: 1rem;
   font-weight: 900;
 }
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.gap {
+  gap: 24px;
+}
 
 /*main css*/
 .nav-bar {
@@ -155,8 +181,10 @@ section {
   height: 40px;
 }
 
+.nav-list {
+  gap: 20px;
+}
 .nav-list a {
-  padding-left: 20px;
   font-size: 20px;
   text-decoration: none;
   color: #fff;
@@ -179,6 +207,31 @@ section {
   animation-delay: 0.5s;
 }
 
+.h-group {
+  margin-bottom: 80px;
+}
+.h-group li:first-child {
+  width: 414px;
+}
+.h-group li:last-child {
+  max-width: 856px;
+}
+
+.service-card {
+  gap: 20px;
+  max-width: 416px;
+  padding: 80px 40px;
+  border: 1px solid #525252;
+  border-radius: 1rem;
+}
+.service-card img {
+  width: 80px;
+}
+.service-card p {
+  color: #F2F2F2;
+}
+
+/*animation*/
 @keyframes arrowup {
   0% {
     bottom: -180px;
