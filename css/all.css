@@ -231,6 +231,73 @@ section {
   color: #F2F2F2;
 }
 
+.logo-group {
+  max-width: 1296px;
+  margin: 5rem 0;
+  overflow: hidden;
+}
+.logo-group img {
+  height: 40px;
+}
+.logo-group li {
+  margin: 20px 0;
+}
+.logo-group::before {
+  position: absolute;
+  top: 0;
+  width: 10rem;
+  height: 100%;
+  content: "";
+  z-index: 1;
+  left: 0;
+  background: linear-gradient(to right, #000 0%, transparent 100%);
+}
+.logo-group::after {
+  position: absolute;
+  top: 0;
+  width: 10rem;
+  height: 100%;
+  content: "";
+  z-index: 1;
+  right: 0;
+  background: linear-gradient(to left, #000 0%, transparent 100%);
+}
+
+.marquee div {
+  animation: marquee 20s linear infinite;
+}
+
+.command-card {
+  gap: 20px;
+  max-width: 416px;
+  margin-top: 80px;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.0784313725);
+}
+.command-card > p {
+  flex-grow: 1 1 0%;
+}
+
+.rate {
+  gap: 20px;
+}
+
+.user {
+  gap: 16px;
+}
+
+.textbox p:first-child {
+  font-weight: 700;
+}
+.textbox p:last-child {
+  font-size: 14px;
+}
+
+.white {
+  padding: 10rem 0;
+}
+
 /*animation*/
 @keyframes arrowup {
   0% {
@@ -244,5 +311,13 @@ section {
   }
   100% {
     bottom: 180px;
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }/*# sourceMappingURL=all.css.map */
