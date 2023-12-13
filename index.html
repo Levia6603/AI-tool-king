@@ -14,6 +14,15 @@
                 <li><a href="#">首頁</a></li>
                 <li><a href="#">定價</a></li>
             </ul>
+            <label class="burger-list">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/menu.png?raw=true" alt="burgerlogo" class="burger-logo">
+                <input type="checkbox">
+                <section class="mobile-menu flex flex-col">
+                    <div class="nav-bar container flex j-between a-center">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/logo.png?raw=true" alt="LOGO">
+                    </div>
+                </section>
+            </label>
         </div>
     </nav>
     <header class="banner">
@@ -33,7 +42,7 @@
                 <li><h4>我們的服務</h4></li>
                 <li><h3>我們相信透過 AI 技術，<br>包括圖像識別、自然語言處理和機器翻譯等，讓您更快、更準確地做出決策。</h3></li>
             </ul>
-            <ul class="c-group flex gap">
+            <ul class="c-group flex gap a-center">
                 <li class="service-card flex flex-col">
                     <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/flash%20on.png?raw=true" alt="flash-icon">
                     <h4>快速</h4>
@@ -291,7 +300,8 @@
     </section>
     <section>
         <div class="join-us container">
-            <h3>現在就來建立屬於你的服務吧</h3>
+            <h3 class="desktop">現在就來建立屬於你的服務吧</h3>
+            <h3 class="mobile">現在就來建立<br>屬於你的服務吧</h3>
             <a href="#" class="btn">開始使用 <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/call%20made.png?raw=true" alt="callmade"></a>
         </div>
     </section>
@@ -308,13 +318,15 @@
             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/logo.png?raw=true" alt="LOGO">
         </div>
         <div class="social container flex j-between">
-            <ul class="flex gap">
+            <ul class="social-list flex">
                 <li class="footer-logo">AI工具王 © 2023</li>
-                <li>Facebook</li>
-                <li>Twitter</li>
-                <li>Instagram</li>
+                <ul class="flex gap">
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                </ul>
             </ul>
-            <a href="#">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+            <a href="#" class="back">Back to top <i class="fa-solid fa-arrow-up"></i></a>
         </div>
     </footer>
 
