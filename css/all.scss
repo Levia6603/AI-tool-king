@@ -32,6 +32,9 @@ h2{
     font-size: 5rem; //desktop 80px
     font-weight: 900;
     line-height: 1.2;
+    @include mobile{
+        font-size: 2rem;
+    }
 }
 h3{
     font-size: 3rem; //desktop 48px
@@ -253,6 +256,9 @@ section{
         z-index: 1;
         left: 0;
         background: linear-gradient(to right, #000 0%, transparent 100%);
+        @include mobile{
+            width: 3rem;
+        }
     }
     &::after{
         position: absolute;
@@ -263,6 +269,9 @@ section{
         z-index: 1;
         right: 0;
         background: linear-gradient(to left, #000 0%, transparent 100%);
+        @include mobile{
+            width: 3rem;
+        }
     }
 }
 .marquee{
@@ -305,6 +314,9 @@ section{
     background-color: #fff;
     h2{
         margin-bottom: 80px;
+    }
+    @include mobile{
+        border-radius: 20px;
     }
 }
 .input-group{
@@ -371,11 +383,12 @@ section{
         height: 312px;
         &:hover{
             transition: 0.5s;
-            height: 350px;
+            transform: scale(1.2);
         }
     }
 }
 .text-area{
+    height: 118px;
     gap: 12px;
     h5{
         font-size: 1rem;
@@ -451,6 +464,9 @@ footer{
 }
 .footer-logo{
     margin-right: 80px;
+    @include mobile{
+        margin: 0;
+    }
 }
 
 /*animation*/

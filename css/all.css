@@ -94,6 +94,11 @@ h2 {
   font-weight: 900;
   line-height: 1.2;
 }
+@media (max-width: 767px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
 
 h3 {
   font-size: 3rem;
@@ -341,6 +346,11 @@ section {
   left: 0;
   background: linear-gradient(to right, #000 0%, transparent 100%);
 }
+@media (max-width: 767px) {
+  .logo-group::before {
+    width: 3rem;
+  }
+}
 .logo-group::after {
   position: absolute;
   top: 0;
@@ -350,6 +360,11 @@ section {
   z-index: 1;
   right: 0;
   background: linear-gradient(to left, #000 0%, transparent 100%);
+}
+@media (max-width: 767px) {
+  .logo-group::after {
+    width: 3rem;
+  }
 }
 
 .marquee div {
@@ -392,6 +407,11 @@ section {
 }
 .white h2 {
   margin-bottom: 80px;
+}
+@media (max-width: 767px) {
+  .white {
+    border-radius: 20px;
+  }
 }
 
 .input-group {
@@ -467,10 +487,11 @@ section {
 }
 .card-img img:hover {
   transition: 0.5s;
-  height: 350px;
+  transform: scale(1.2);
 }
 
 .text-area {
+  height: 118px;
   gap: 12px;
 }
 .text-area h5 {
@@ -555,6 +576,11 @@ footer .link img {
 
 .footer-logo {
   margin-right: 80px;
+}
+@media (max-width: 767px) {
+  .footer-logo {
+    margin: 0;
+  }
 }
 
 /*animation*/
