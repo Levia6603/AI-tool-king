@@ -14,12 +14,23 @@
                 <li><a href="#">首頁</a></li>
                 <li><a href="#">定價</a></li>
             </ul>
+            <!--mobile menu-->
             <label class="burger-list">
                 <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/menu.png?raw=true" alt="burgerlogo" class="burger-logo">
                 <input type="checkbox">
-                <section class="mobile-menu flex flex-col">
+                <!--mobile menudropdown-->
+                <section class="mobile-menu flex flex-col j-between">
                     <div class="nav-bar container flex j-between a-center">
                     <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/logo.png?raw=true" alt="LOGO">
+                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/menu.png?raw=true" alt="burgerlogo" class="burger-logo">
+                    </div>
+                    <div class="social container">
+                        <p class="footer-logo">AI工具王 © 2023</p>
+                        <ul class="mobile flex gap">
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                        </ul>
                     </div>
                 </section>
             </label>
@@ -42,7 +53,7 @@
                 <li><h4>我們的服務</h4></li>
                 <li><h3>我們相信透過 AI 技術，<br>包括圖像識別、自然語言處理和機器翻譯等，讓您更快、更準確地做出決策。</h3></li>
             </ul>
-            <ul class="c-group flex gap a-center">
+            <ul class="c-group flex gap">
                 <li class="service-card flex flex-col">
                     <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/flash%20on.png?raw=true" alt="flash-icon">
                     <h4>快速</h4>
@@ -317,16 +328,23 @@
             </div>
             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/logo.png?raw=true" alt="LOGO">
         </div>
-        <div class="social container flex j-between">
-            <ul class="social-list flex">
-                <li class="footer-logo">AI工具王 © 2023</li>
-                <ul class="flex gap">
-                    <li>Facebook</li>
-                    <li>Twitter</li>
-                    <li>Instagram</li>
+        <div class="social container">
+            <div class="flex j-between">
+                <ul class="social-list flex">
+                    <li class="footer-logo">AI工具王 © 2023</li>
+                    <ul class="desktop flex gap">
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                    </ul>
                 </ul>
+                <a href="#" class="back">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+            <ul class="mobile flex gap">
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
             </ul>
-            <a href="#" class="back">Back to top <i class="fa-solid fa-arrow-up"></i></a>
         </div>
     </footer>
 
