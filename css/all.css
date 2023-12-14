@@ -547,9 +547,11 @@ footer .link img {
 }
 
 /*section4*/
-.qa .container {
-  flex-direction: column;
-  gap: 24px;
+@media (max-width: 767px) {
+  .qa .container {
+    flex-direction: column;
+    gap: 24px;
+  }
 }
 
 .qa-album {
@@ -571,6 +573,15 @@ footer .link img {
 .qa-card h5 {
   font-size: 20px;
   font-weight: 900;
+}
+.qa-card img {
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 767px) {
+  .qa-card {
+    padding: 20px;
+  }
 }
 
 /*import font*/
