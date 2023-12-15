@@ -253,7 +253,11 @@
   }
   @include mobile {
     display: flex;
+    overflow: scroll;
   }
+}
+.filter-mobile::-webkit-scrollbar {
+  display: none;
 }
 .card-album {
   margin: 40px 0;

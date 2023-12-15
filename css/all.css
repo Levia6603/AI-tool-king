@@ -858,7 +858,12 @@ footer .link img {
 @media (max-width: 767px) {
   .filter-mobile {
     display: flex;
+    overflow: scroll;
   }
+}
+
+.filter-mobile::-webkit-scrollbar {
+  display: none;
 }
 
 .card-album {
