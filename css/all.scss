@@ -128,6 +128,41 @@
     background-color: #525252;
   }
 }
+.carousel-setting {
+  width: 351px;
+  margin: 0 auto;
+}
+.scroll {
+  width: 351px;
+  display: flex;
+  gap: 10px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+.scroll-item {
+  width: 351px;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+}
+.carousel-nav {
+  gap: 8px;
+  margin-top: 24px;
+  a {
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #525252;
+    &:hover {
+      background-color: #fff;
+      transform: scale(1.5);
+      transition: 0.3s;
+    }
+  }
+}
 .command-card {
   gap: 20px;
   max-width: 416px;
