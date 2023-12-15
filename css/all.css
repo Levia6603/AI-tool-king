@@ -745,6 +745,7 @@ footer .link img {
 .carousel-nav {
   gap: 8px;
   margin-top: 24px;
+  margin-bottom: 4px;
 }
 .carousel-nav a {
   width: 8px;
